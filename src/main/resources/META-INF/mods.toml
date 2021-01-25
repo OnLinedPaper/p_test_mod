@@ -1,0 +1,33 @@
+    # The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+    modLoader="javafml"
+    # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+    # Forge for 1.16.3 is version 34
+    loaderVersion="[34,)"
+    # If the mods defined in this file should show as seperate resource packs
+    showAsResourcePack=false
+    # add a license
+	license="All rights reserved"
+
+    [[mods]]
+      modId="ptestmod1"
+      version="1.0.0.0"
+      displayName="paper test mod"
+      credits="ptest credits"
+      authors="paper"
+      description='''
+      basic mod test
+      '''
+
+      [[dependencies.ptestmod1]]
+        modId="forge"
+        mandatory=true
+        versionRange="[34,)"
+        ordering="NONE"
+        side="BOTH"
+
+      [[dependencies.ptestmod1]]
+        modId="minecraft"
+        mandatory=true
+        versionRange="[1.16.1,1.17]"
+        ordering="NONE"
+        side="BOTH"
